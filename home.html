@@ -15,15 +15,41 @@
         </ul>
     </nav>
 
-    <h1>GitHub Chrome Extension</h1>
+    <h1>Commit Pro: GitHub Chrome Extension</h1>
     <h4>Summer 2024</h4>
 
-    <div class = content>
+    <div class = about>
         <h2>About</h2>
         <hr>
-        <p>This GitHub Chrome Extension has the goal of generating more clear and concise commit messages as suggestions to help developers better document their code refactoring changes. With several pull requests and commits in projects, it can be hard for developers or others to know exactly what is going on at a certain commit. This extension can help developers and others be more efficient by not wasting time finding the perfect documentation methodology or trying to understand the commit they made.
+        <p>
+            Commit Pro is a Google Chrome Extension designed for GitHub to help aid developers understand code changes at a commit level by providing summaries on code changes along with intent and impact behind changes. Clear and understandable commit messages are crucial for code documentation, but there is a current lack in documentation standards for developers. One big problem is the vague and sometimes inconsistent commit messages. This leads to unproductive sessions when referring back to previous versions in the codebase trying to understand the motivation and rationale behind such changes. Commit Pro addresses this challenge by generating detailed summaries on code changes especially from refactoring instances along with the intent and impact of the change in the codebase. This not only improves clarity for developers but helps them be more efficient and not waste time understanding what they or other developers did at this particular commit. 
+            
         </p>
-    
+        <p>
+            We leverage RefactoringMiner API tool for refactoring detection and utilize OpenAI's GPT-3.5-Turbo-Instruct model for generating summaries with intent and impact from refactoring instances. 
+        </p>
+    </div>
+
+    <div class = "content">
+        <h2>Examples</h2>
+        <hr>
+        <p>Here are a few examples of how the extension works with several different usecases. Here are a few examples when there are refactoring instances and nonrefactoring instances.</p>
+
+        <h2>Refactoring Examples</h2>
+        <img src="cp1.png" width="780px">
+
+        <img src = "cp2.png" width = "780px">
+
+        <img src = "cp3.png" width="780px">
+        <br>
+
+        <h2>Nonrefactoring Examples</h2>
+        <p>There were no refactoring instances but there were still code changes.</p>
+
+        <img src = "cp4.png" width=" 780px">
+        <img src = "cp5.png" width = "780px">
+        <img src = "cp6.png" width = "780px">
+
     </div>
 </body>
 </html>
